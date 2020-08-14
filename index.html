@@ -13,6 +13,7 @@
   <div class="container">
     <h1>What Should be My First Programming Language?</h1>
     <p>We understand you're interested in learning your first programming language. Fill out this short questionnaire, and we'll tell you which language you should learn first!</p>
+    
     <div>
       <form id="formOne">
         <div class="form-group">
@@ -22,6 +23,7 @@
         <button type="submit" class="btn btn-primary">Take me to Question 1!</button>
       </form>
     </div>
+    
     <div>
       <form id="formTwo">
         <div class="form-group">
@@ -31,21 +33,11 @@
         <button type="submit" class="btn btn-primary">Question 2!</button>
       </form>
     </div>
-      <form id="formSix">
-        <label for="media">What is your favorite streaming App?</label>
-        <select id="media">
-          <option value="">Choose One</option>
-          <option value="netflix">Netflix</option>
-          <option value="hulu">Hulu</option>
-          <option value="prime">Prime</option>
-        </select>
-      </form>  
-    </div>
+    
     <div>
-      <form id="formTwo">
+      <form id="formThree">
+        <label for="radio">What is your fantasy programming career?</label><br>
         <div class="radio">
-          <label for="radio">What is your dream career as a programmer?</label>
-          <label>
             <input type="radio" name="operator" value="game" checked>
             Video Game Developer
           </label>
@@ -62,15 +54,59 @@
             App Developer
           </label>
         </div> 
-        <button type="submit" class="btn btn-primary">Let's Continue</button>               
+        <button type="submit" class="btn btn-primary">Let's Continue!</button>               
       </form>
     </div>
-    
-      <div id="interest-scale">
-        <label for="interest">On a scale of 1-10, how interested are you in Programming?</label>
-        <input id="interest" type="text">
-      </div>  
-      <button type="submit" class="btn btn-primary">Question 2!</button>
+
+    <div>
+      <form id="formFour">
+        <label for="location">From Where Do You Prefer to Work?</label>
+        <select id="location">
+          <option value="">Choose One</option>
+          <option value="remote">Remotely from Home</option>
+          <option value="office">Company Office</option>
+          <option value="abroad">Remotely Abroad</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Question 4!</button>
+      </form>  
+    </div>
+
+    <div>
+      <form id="formFive">
+        <label for="salary">What is your minimum desired yearly salary?</label><br>
+        <div class="salary">
+            <input type="radio" name="operator" value=min checked>
+            $60,000
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="avg">
+            $90,000
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="max">
+            $120,000
+          </label>
+        </div> 
+        <button type="submit" class="btn btn-primary">Let's Continue!</button>               
+      </form>
+    </div>
+
+    <div>
+      <form id="formSix">
+        <label for="media">What is your favorite streaming App?</label>
+        <select id="media">
+          <option value="">Choose One</option>
+          <option value="netflix">Netflix</option>
+          <option value="hulu">Hulu</option>
+          <option value="prime">Prime</option>
+        </select>
+        <button type="submit" class="btn btn-danger">Here's Your Language!</button>
+      </form>  
+    </div>
     </form>
 
     <div id="fullStack">

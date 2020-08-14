@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
   $("#formThree").submit(function(event) {
-    const interestInput = $("input#interest").val();
+    const radioInput = $("input#radio").val();
 
     $("#formFour").show();
     $("#formThree").hide();
@@ -28,7 +28,7 @@ $(document).ready(function() {
   });
 
   $("#formFour").submit(function(event) {
-    const interestInput = $("input#interest").val();
+    const locationInput = $("input#location").val();
 
     $("#formFive").show();
     $("#formFour").hide();
@@ -37,16 +37,16 @@ $(document).ready(function() {
   });
 
   $("#formFive").submit(function(event) {
-    const interestInput = $("input#interest").val();
+    const salaryInput = $("input#salary").val();
 
     $("#formSix").show();
-    $("#formSix").hide();
+    $("#formFive").hide();
 
     event.preventDefault();
   });
-
-  $("select#media").change(function(event) {
-    const media = $("select#media").val();
+  
+  ("#formSix").submit(function(event) {
+    const media = $("input#media").val();
 
     if (media === "netflix") {
       $("#cSharp").hide()
@@ -64,25 +64,5 @@ $(document).ready(function() {
 
     event.preventDefault()
   });
-
-  $("form#language").submit(function(event) {
-    const netflix = parseInt($("input#netflix").val())
-    const hulu = parseInt($("input#hulu").val());
-    const prime = parseInt($("input#prime").val());
-    const interest = $("select#interest").val();
-
-      if (interest === "love" && love > 5){
-      $("#fullStack").show();
-      } else if (interest ==="hate" && hate > 5){
-      $("#ruby").show();
-      } else if (interest === "hate" || interest === "love"){
-      $("#cSharp").show();
-      }
-
-      if (!interest || !love && !hate){
-      alert('Please complete the questionnaire fully for an assessment.');
-    }
-
-    event.preventDefault();
-  });
+  
 });
