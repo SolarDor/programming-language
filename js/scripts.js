@@ -3,27 +3,31 @@ $(document).ready(function() {
     const fullNameInput = $("input#fullName").val();
 
     $(".fullName").append(fullNameInput);
-
-    $("#language").show();
+    $("#formTwo").show();
+    $("#formOne").hide();
 
     event.preventDefault();
   });
 
-  $("select#interest").change(function(event) {
-    const interest = $("select#interest").val();
+  $(select#).change(function(event) {
+    const
+  });
+
+  $("select#media").change(function(event) {
+    const media = $("select#media").val();
 
     if (interest === "netflix") {
-      $("#hulu-scale").hide()
-      $("#prime-scale").hide()
-      $("#netflix-scale").show()
+      $("#cSharp").hide()
+      $("#ruby").hide()
+      $("#fullStack").show()
       } else if (interest === "hulu") {
-      $("#netflix-scale").hide()
-      $("#prime-scale").hide()
-      $("#hulu-scale").show()
+      $("#cSharp").hide()
+      $("#fullStack").hide()
+      $("#ruby").show()
       } else if (interest === "prime") {
-      $("netflix-scale").hide()
-      $("#hulu-scale").hide()
-      $("#prime-scale").show();
+      $("#ruby").hide()
+      $("#fullStack").hide()
+      $("#cSharp").show();
       }
 
     event.preventDefault()

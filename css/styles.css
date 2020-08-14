@@ -2,7 +2,27 @@
   display: block;
 }
 
-#language {
+#formTwo {
+  display: none;
+}
+
+#formThree {
+  display: none;
+}
+
+#formThree {
+  display: none;
+}
+
+#formFour {
+  display: none;
+}
+
+#formFive {
+  display: none;
+}
+
+#formSix {
   display: none;
 }
 
@@ -51,6 +71,19 @@ img {
   height: auto;
 }
 
+p {
+  text-align: center;
+  font-family: courier;
+  font-size: 20px;
+}
+
 h2 {
   text-align: center;
+  font-family: courier;
+}
+
+h1 {
+  font-family: courier;
+  text-align: center;
+  font-weight: bold;
 }
