@@ -2,23 +2,27 @@
   display: block;
 }
 
-#love-scale {
+#netflix-scale {
   display: none;
 }
 
-#hate-scale {
+#hulu-scale {
   display: none;
 }
 
-#stewart {
+#prime-scale {
   display: none;
 }
 
-#busey {
+#ruby {
   display: none;
 }
 
-#foxx {
+#csharp {
+  display: none;
+}
+
+#fullstack {
   display: none;
 }
 

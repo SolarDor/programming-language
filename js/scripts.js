@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("select#interest").change(function(event) {
     const interest = $("select#interest").val();
 
-    if (interest === "netflix"){
+    if (interest === "netflix") {
       $("#hulu-scale").hide()
       $("#prime-scale").hide()
       $("#netflix-scale").show()
@@ -11,7 +11,7 @@ $(document).ready(function() {
       $("#netflix-scale").hide()
       $("#prime-scale").hide()
       $("#hulu-scale").show()
-      } else {
+      } else if (interest === "prime") {
       $("netflix-scale").hide()
       $("#hulu-scale").hide()
       $("#prime-scale").show();
