@@ -1,0 +1,48 @@
+.btn {
+  display: block;
+}
+
+#love-scale {
+  display: none;
+}
+
+#hate-scale {
+  display: none;
+}
+
+#stewart {
+  display: none;
+}
+
+#busey {
+  display: none;
+}
+
+#foxx {
+  display: none;
+}
+
+.text1 {
+  font-weight: bold;
+  text-emphasis: italic;
+  color: gold;
+}
+
+.text2 {
+  color: brown;
+}
+
+.text3 {
+  font-weight: bold;
+  color: darkred;
+}
+
+img {
+  float: center;
+  width: 450px;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}

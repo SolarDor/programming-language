@@ -10,7 +10,7 @@ $(document).ready(function() {
       } else if (interest === "hulu") {
       $("#netflix-scale").hide()
       $("#prime-scale").hide()
-      $("#hulu-scale").show();
+      $("#hulu-scale").show()
       } else {
       $("netflix-scale").hide()
       $("#hulu-scale").hide()
