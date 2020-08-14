@@ -52,11 +52,11 @@ $(document).ready(function() {
       $("#cSharp").hide()
       $("#ruby").hide()
       $("#fullStack").show()
-      } else if (interest === "hulu") {
+      } else if (media === "hulu") {
       $("#cSharp").hide()
       $("#fullStack").hide()
       $("#ruby").show()
-      } else if (interest === "prime") {
+      } else if (media === "prime") {
       $("#ruby").hide()
       $("#fullStack").hide()
       $("#cSharp").show();
