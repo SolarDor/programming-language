@@ -11,10 +11,10 @@ $(document).ready(function() {
 
   $("#formTwo").submit(function(event) {
     const interestInput = $("input#interest").val();
-
+    
     $("#formThree").show();
     $("#formTwo").hide();
-
+    
     event.preventDefault();
   });
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   $("#formFour").submit(function(event) {
     const locationInput = $("input#location").val();
-
+  
     $("#formFive").show();
     $("#formFour").hide();
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
   });
   
   ("#formSix").submit(function(event) {
-    const media = $("input#media").val();
+    const media = $("select#media").val();
 
     if (media === "netflix") {
       $("#cSharp").hide()

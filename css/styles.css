@@ -1,9 +1,15 @@
 .btn {
   display: block;
+  position: center;
+}
+
+#formOne {
+  
 }
 
 #formTwo {
   display: none;
+
 }
 
 #formThree {
@@ -22,27 +28,15 @@
   display: none;
 }
 
-#netflix-scale {
-  display: none;
-}
-
-#hulu-scale {
-  display: none;
-}
-
-#prime-scale {
-  display: none;
-}
-
 #ruby {
   display: none;
 }
 
-#csharp {
+#cSharp {
   display: none;
 }
 
-#fullstack {
+#fullStack {
   display: none;
 }
 
