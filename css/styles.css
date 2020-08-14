@@ -2,6 +2,10 @@
   display: block;
 }
 
+#language {
+  display: none;
+}
+
 #netflix-scale {
   display: none;
 }

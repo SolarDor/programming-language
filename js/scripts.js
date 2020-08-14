@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    const fullNameInput = $("input#fullName").val();
+
+    $(".fullName").append(fullNameInput);
+
+    $("#language").show();
+
+    event.preventDefault();
+  });
 
   $("select#interest").change(function(event) {
     const interest = $("select#interest").val();
