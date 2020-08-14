@@ -9,14 +9,46 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $(select#).change(function(event) {
-    const
+  $("#formTwo").submit(function(event) {
+    const interestInput = $("input#interest").val();
+
+    $("#formThree").show();
+    $("#formTwo").hide();
+
+    event.preventDefault();
+  });
+
+  $("#formThree").submit(function(event) {
+    const interestInput = $("input#interest").val();
+
+    $("#formFour").show();
+    $("#formThree").hide();
+
+    event.preventDefault();
+  });
+
+  $("#formFour").submit(function(event) {
+    const interestInput = $("input#interest").val();
+
+    $("#formFive").show();
+    $("#formFour").hide();
+
+    event.preventDefault();
+  });
+
+  $("#formFive").submit(function(event) {
+    const interestInput = $("input#interest").val();
+
+    $("#formSix").show();
+    $("#formSix").hide();
+
+    event.preventDefault();
   });
 
   $("select#media").change(function(event) {
     const media = $("select#media").val();
 
-    if (interest === "netflix") {
+    if (media === "netflix") {
       $("#cSharp").hide()
       $("#ruby").hide()
       $("#fullStack").show()
