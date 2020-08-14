@@ -45,8 +45,8 @@ $(document).ready(function() {
     event.preventDefault();
   });
   
-  ("#formSix").submit(function(event) {
-    const media = $("select#media").val();
+  $("form#program").submit(function(event) {
+    const mediaInput = $("input#media").val();
 
     if (media === "netflix") {
       $("#cSharp").hide()
@@ -64,5 +64,4 @@ $(document).ready(function() {
 
     event.preventDefault()
   });
-  
 });
