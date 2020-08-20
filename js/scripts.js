@@ -18,19 +18,23 @@ $(document).ready(function() {
       $(".ruby").hide()
       $(".cSharp").hide();
       $(".fullStack").show()
+      $(".btnRefresh").show()
       } else if (media === "hulu") {
       $("#fullName").append(fullNameInput);
       $(".cSharp").hide();
       $(".fullStack").hide()
       $(".ruby").show()
+      $(".btnRefresh").show()
       } else if (media === "prime") {
       $("#fullName").append(fullNameInput);
       $(".fullStack").hide()
       $(".ruby").hide()
       $(".cSharp").show();
+      $(".btnRefresh").show()
       }
       
 
     event.preventDefault()
   });
+
 });

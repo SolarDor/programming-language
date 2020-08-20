@@ -6,11 +6,11 @@ _This application is an HTML webpage that utilizes CSS Stylings, Bootstrap, Java
 ## Setup/Installation Requirements
 
 * _Download all files from repository_
-* _Run on a browser_
+* _Run index.html on a browser_
 
 ## Known Bugs
 
-_No known bugs at this time._
+_No known bugs at this time_
 
 ## Support and contact details
 
