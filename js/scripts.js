@@ -1,66 +1,45 @@
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
+  $("#program").submit(function(event) {
     const fullNameInput = $("input#fullName").val();
+    const interest = $("input#interest").val();
+    const career = $("select#career").val();
+    const loc = $("input#loc").val();
+    const salary = $("input#salary").val();
+    const media = $("select#media").val();
 
-    $(".fullName").append(fullNameInput);
-    $("#formTwo").show();
-    $("#formOne").hide();
-
-    event.preventDefault();
-  });
-
-  $("#formTwo").submit(function(event) {
-    const interestInput = $("input#interest").val();
-    
-    $("#formThree").show();
-    $("#formTwo").hide();
-    
-    event.preventDefault();
-  });
-
-  $("#formThree").submit(function(event) {
-    const radioInput = $("input#radio").val();
-
-    $("#formFour").show();
-    $("#formThree").hide();
-
-    event.preventDefault();
-  });
-
-  $("#formFour").submit(function(event) {
-    const locationInput = $("input#location").val();
-  
-    $("#formFive").show();
-    $("#formFour").hide();
-
-    event.preventDefault();
-  });
-
-  $("#formFive").submit(function(event) {
-    const salaryInput = $("input#salary").val();
-
-    $("#formSix").show();
-    $("#formFive").hide();
-
-    event.preventDefault();
-  });
-  
-  $("form#program").submit(function(event) {
-    const mediaInput = $("input#media").val();
-
-    if (media === "netflix") {
-      $("#cSharp").hide()
-      $("#ruby").hide()
-      $("#fullStack").show()
+    if(fullNameInput === "") {
+      $(alert("Please Enter Your Full Name!"))
+      location.reload();
+    } else if (interest <= 5) {
+      $(alert("You're Going To Need More Interest Than That!"))
+      location.reload();
+    } else if (media === "netflix") {
+      $("#fullName").append(fullNameInput);
+      $(".ruby").hide()
+      $(".cSharp").hide();
+      $(".fullStack").show()
+      $("#btnRefresh").show()
       } else if (media === "hulu") {
-      $("#cSharp").hide()
-      $("#fullStack").hide()
-      $("#ruby").show()
+      $("#fullName").append(fullNameInput);
+      $(".cSharp").hide();
+      $(".fullStack").hide()
+      $(".ruby").show()
+      $("#btnRefresh").show()
       } else if (media === "prime") {
-      $("#ruby").hide()
-      $("#fullStack").hide()
-      $("#cSharp").show();
+      $("#fullName").append(fullNameInput);
+      $(".fullStack").hide()
+      $(".ruby").hide()
+      $(".cSharp").show();
+      $("#btnRefresh").show()
       }
+      
+
+    event.preventDefault()
+  });
+  
+  $("#btnRefresh").click(function() {
+    $("#results").fadeOut();
+    location.reload();
 
     event.preventDefault()
   });

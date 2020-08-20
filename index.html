@@ -9,111 +9,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programming Language Suggester</title>
 </head>
-<body style="background: url('')">
+<body style="background: url('img/Matrix.jpg')">
   <div class="container">
-    <h1>What Should be My First Programming Language?</h1>
-    <p>We understand you're interested in learning your first programming language. Fill out this short questionnaire, and we'll tell you which language you should learn first!</p>
+    <div class="jumbotron" style="background-image: url(img/robot.jpg); background-size: 100%;" text-center shadow-lg mt-2>
+      <h1>What Should be My First Programming Language?</h1><br><br>
+      <p>We understand you're interested in learning your first programming language. Fill out this short questionnaire, and we'll tell you which language you should learn first!</p>
+    </div>
     <form id="program">
-      <div id="formOne">
-        <div class="form-group">
-          <label for="fullName">Enter Full Name</label>
-          <input id="fullName" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-primary">Take me to Question 1!</button>
+      <div class="name">
+        <label for="fullName"><h2>Enter Full Name</h2></label>
+        <input id="fullName" class="form-control" type="text">
       </div>
-      <div id="formTwo">
-        <div class="form-group">
-          <label for="interest">On a scale of 1-10, How interested are you in programming?</label>
-          <input id="interest" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-primary">Question 2!</button>
+      <div class="interest">
+        <label for="interest"><h2>On a scale of 1-10, How interested are you in programming?</h2></label>
+        <input id="interest" class="form-control" type="text">
       </div>
-      <div id="formThree">
-        <label for="radio">What is your fantasy programming career?</label><br>
-        <div class="radio">
-            <input type="radio" name="operator" value="game" checked>
-            Video Game Developer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="web">
-            Webpage Designer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="app">
-            App Developer
-          </label>
-        </div> 
-        <button type="submit" class="btn btn-primary">Let's Continue!</button>               
+      <label for="career"><h2>What is your fantasy programming job?</h2></label><br>
+      <select id="career">
+        <option value="">Choose One</option>
+        <option value="game">Video Game Developer</option>
+        <option value="webpage">Webpage Designer</option>
+        <option value="app">App Developer</option>
+      </select><br><br>          
+      <label for="loc"><h2>From Where Do You Prefer to Work?</h2></label><br>
+      <select id="loc">
+        <option value="">Choose One</option>
+        <option value="remote">Remotely from Home</option>
+        <option value="office">Company Office</option>
+        <option value="abroad">Remotely Abroad</option>
+      </select><br><br>
+      <label for="salary"><h2>What is your minimum desired yearly salary?</h2></label><br>
+      <div class="salary">
+        <label>
+          <input type="radio" name="operator" value=min checked>
+          $60,000
+        </label>
       </div>
-      <div id="formFour">
-        <label for="location">From Where Do You Prefer to Work?</label>
-        <select id="location">
-          <option value="">Choose One</option>
-          <option value="remote">Remotely from Home</option>
-          <option value="office">Company Office</option>
-          <option value="abroad">Remotely Abroad</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Question 4!</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="avg">
+          $90,000
+        </label>
       </div>
-      <div id="formFive">
-        <label for="salary">What is your minimum desired yearly salary?</label><br>
-        <div class="salary">
-            <input type="radio" name="operator" value=min checked>
-            $60,000
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="avg">
-            $90,000
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="max">
-            $120,000
-          </label>
-        </div> 
-        <button type="submit" class="btn btn-primary">Let's Continue!</button>               
-      </div>
-      <div id="formSix">
-        <label for="media">What is your favorite streaming App?</label><br>
-        <div class="media">
-            <input type="radio" name="operator" value="netflix" checked>
-            Netflix
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="hulu">
-            Hulu
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="prime">
-            Prime
-          </label>
-        </div> 
-        <button type="submit" class="btn btn-danger">Here's Your Language!</button>               
-      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="max">
+          $120,000
+        </label>
+      </div> 
+      <label for="media"><h2>What is your favorite streaming App?</h2></label><br>
+      <select id="media">
+        <option value="">Choose One</option>
+        <option value="netflix">Netflix</option>
+        <option value="prime">Prime Video</option>
+        <option value="hulu">Hulu</option>
+      </select><br><br>
+      <button type="submit" class="btn">Here's Your Language!</button>               
     </form>
-    <div id="fullStack">
-      <h2>Congratulations, <span class="fullName"></span>! Your intense love for Netflix tells us you would be a great fit for <span class="text3">Full Stack Javascript</span>. Look at you, now you can binge Netflix all night -and- work for them all day!</h2>
-      <img src="img/fullstack.png" alt="full stack javascript info card">
-    </div>
-    <div id="cSharp">
-      <h2>Congratulations, <span class="fullName"></span>! Your interests tell us you would excel in <span class="text2">C#/.NET</span>,often referred to as the language of Microsoft. Enjoy a lengthy career as this language will be around forever. Here is more information:</h2>
-      <img src="img/csharp.png" alt="C#/.NET info card">
-    </div>
-    <div id="ruby">
-      <h2>Congratulations, <span class="fullName"></span>! Your results show that you would be a fabulous fit for <span class="text1">Ruby on Rails</span>, often considered the most elegant of programming languages. Here is more information to ignite your interest, you classy coder!</h2>
-      <img src="img/ruby.png" alt="ruby on rails info card">
-    </div>
+    <div class="card" id="results">
+      <div class="card-body">
+        <div class="fullStack">
+          <h3>Congratulations, <span class="fullName"></span>! Your intense love for Netflix tells us you would be a great fit for <span class="text3">Full Stack Javascript</span>. Look at you, now you can binge Netflix all night -and- work for them all day!</h3>
+          <img src="img/fullstack.png" alt="full stack javascript info card">
+        </div>
+        <div class="cSharp">
+          <h3>Congratulations, <span class="fullName"></span>! Your interests tell us you would excel in <span class="text2">C#/.NET</span>,often referred to as the language of Microsoft. Enjoy a lengthy career as this language will be around forever. Here is more information:</h3>
+          <img src="img/csharp.png" alt="C#/.NET info card">
+        </div>
+        <div class="ruby">
+          <h3>Congratulations, <span class="fullName"></span>! Your results show that you would be a fabulous fit for <span class="text1">Ruby on Rails</span>, often considered the most elegant of programming languages. Here is more information to ignite your interest, you classy coder!</h3>
+          <img src="img/ruby.png" alt="ruby on rails info card">
+        </div>
+        <button id="btnRefresh">Let's Start Over!</button>
+      </div>
+    </div>  
   </div>  
 </body>
 </html>
