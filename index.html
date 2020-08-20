@@ -11,21 +11,21 @@
 </head>
 <body style="background: url('')">
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-center shadow-lg mt-2">
       <h1>What Should be My First Programming Language?</h1>
       <p>We understand you're interested in learning your first programming language. Fill out this short questionnaire, and we'll tell you which language you should learn first!</p>
     </div>
     <form id="program">
         <div class="form-group">
-          <label for="fullName">Enter Full Name</label>
+          <label for="fullName"><h2>Enter Full Name</h2></label>
           <input id="fullName" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="interest">On a scale of 1-10, How interested are you in programming?</label>
+          <label for="interest"><h2>On a scale of 1-10, How interested are you in programming?</h2></label>
           <input id="interest" class="form-control" type="text">
         </div>
         <label for="radio"><h2>What is your fantasy programming career?</h2></label><br>
-        <div class="radio">
+        <div class="career">
             <input type="radio" name="operator" value="game" checked>
             Video Game Developer
           </label>
@@ -42,14 +42,14 @@
             App Developer
           </label>
         </div>               
-        <label for="location">From Where Do You Prefer to Work?</label>
+        <label for="location"><h2>From Where Do You Prefer to Work?</h2></label>
         <select id="location">
           <option value="">Choose One</option>
           <option value="remote">Remotely from Home</option>
           <option value="office">Company Office</option>
           <option value="abroad">Remotely Abroad</option>
         </select><br>
-        <label for="salary">What is your minimum desired yearly salary?</label><br>
+        <label for="salary"><h2>What is your minimum desired yearly salary?</h2></label><br>
         <div class="salary">
             <input type="radio" name="operator" value=min checked>
             $60,000
@@ -67,24 +67,13 @@
             $120,000
           </label>
         </div> 
-        <label for="media">What is your favorite streaming App?</label><br>
-        <div class="media">
-          <label>
-            <input type="radio" name="operator" value="netflix" checked>
-            Netflix
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="hulu">
-            Hulu
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="prime">
-            Prime
-          </label>
+        <label for="media"><h2>What is your favorite streaming App?</h2></label>
+        <select id="media">
+          <option value="">Choose One</option>
+          <option value="netflix">Netflix</option>
+          <option value="prime">Prime Video</option>
+          <option value="hulu">Hulu</option>
+        </select><br>
         </div> 
         <button type="submit" class="btn btn-danger">Here's Your Language!</button>               
       </div>

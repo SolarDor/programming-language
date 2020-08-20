@@ -9,10 +9,10 @@
 }
 
 form#program {
-  background-color: #79B177;
+  background-color: skyblue;
   text-align: center;
   color:black;
-  border: 10px solid white;
+  border: 10px solid rgb(93, 138, 113);
   border-radius: 25px;
 }
 
@@ -58,6 +58,7 @@ p {
 h2 {
   text-align: center;
   font-family: courier;
+  font-weight: bold;
 }
 
 h1 {
