@@ -1,28 +1,14 @@
 .btn {
-  display: block;
-  position: center;
+  padding: 10px;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 3px solid black;
+  color: black;
 }
 
-#formTwo {
-  display: none;
 
-}
-
-#formThree {
-  display: none;
-}
-
-#formFour {
-  display: none;
-}
-
-#formFive {
-  display: none;
-}
-
-#formSix {
-  display: none;
-}
 
 .ruby {
   display: none;
