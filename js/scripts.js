@@ -2,6 +2,8 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     const fullNameInput = $("input#fullName").val();
 
+
+
     $(".fullName").append(fullNameInput);
     $("#formTwo").show();
     $("#formOne").hide();

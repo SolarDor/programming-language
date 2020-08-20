@@ -24,15 +24,15 @@
   display: none;
 }
 
-#ruby {
+.ruby {
   display: none;
 }
 
-#cSharp {
+.cSharp {
   display: none;
 }
 
-#fullStack {
+.fullStack {
   display: none;
 }
 
