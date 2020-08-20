@@ -1,25 +1,26 @@
 $(document).ready(function() {
   $("#program").submit(function(event) {
-    const fullNameInput = $("input#fullName").val();
-    const interestInput = $("input#interest").val();
-    const radioInput = $("input#radio").val();
-    const locationInput = $("input#location").val();
-    const salaryInput = $("input#salary").val();
-    const mediaInput = $("input#media").val();
+    const fullName = $("input#fullName").val();
+    const interest = $("input#interest").val();
+    const career = $("select#career").val();
+    const location = $("input#location").val();
+    const salary = $("input#salary").val();
+    const media = $("select#media").val();
 
-    $(".fullName").append(fullNameInput);
-
-    if (media === "netflix") {
-      $("#cSharp").hide()
-      $("#ruby").hide()
+    if(fullName === "") {
+      $(alert("Please Enter Your Full Name!"))
+      location.reload();
+    } else if (interest === interest < 5) {
+      $(alert("You're Going To Need More Interest Than That!"))
+      location.reload();
+    } else if (media === "netflix") {
+      $("#fullName").append(fullName);
       $("#fullStack").show()
       } else if (media === "hulu") {
-      $("#cSharp").hide()
-      $("#fullStack").hide()
+      $("#fullName").append(fullName);
       $("#ruby").show()
       } else if (media === "prime") {
-      $("#ruby").hide()
-      $("#fullStack").hide()
+      $("#fullName").append(fullName);
       $("#cSharp").show();
       }
 

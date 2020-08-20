@@ -9,74 +9,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programming Language Suggester</title>
 </head>
-<body style="background: url('')">
+<body style="background: url('img/Matrix.jpg')">
   <div class="container">
     <div class="jumbotron text-center shadow-lg mt-2">
       <h1>What Should be My First Programming Language?</h1>
       <p>We understand you're interested in learning your first programming language. Fill out this short questionnaire, and we'll tell you which language you should learn first!</p>
     </div>
     <form id="program">
-        <div class="form-group">
-          <label for="fullName"><h2>Enter Full Name</h2></label>
-          <input id="fullName" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="interest"><h2>On a scale of 1-10, How interested are you in programming?</h2></label>
-          <input id="interest" class="form-control" type="text">
-        </div>
-        <label for="radio"><h2>What is your fantasy programming career?</h2></label><br>
-        <div class="career">
-            <input type="radio" name="operator" value="game" checked>
-            Video Game Developer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="web">
-            Webpage Designer
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="app">
-            App Developer
-          </label>
-        </div>               
-        <label for="location"><h2>From Where Do You Prefer to Work?</h2></label>
-        <select id="location">
-          <option value="">Choose One</option>
-          <option value="remote">Remotely from Home</option>
-          <option value="office">Company Office</option>
-          <option value="abroad">Remotely Abroad</option>
-        </select><br>
-        <label for="salary"><h2>What is your minimum desired yearly salary?</h2></label><br>
-        <div class="salary">
-            <input type="radio" name="operator" value=min checked>
-            $60,000
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="avg">
-            $90,000
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="operator" value="max">
-            $120,000
-          </label>
-        </div> 
-        <label for="media"><h2>What is your favorite streaming App?</h2></label>
-        <select id="media">
-          <option value="">Choose One</option>
-          <option value="netflix">Netflix</option>
-          <option value="prime">Prime Video</option>
-          <option value="hulu">Hulu</option>
-        </select><br>
-        </div> 
-        <button type="submit" class="btn btn-danger">Here's Your Language!</button>               
+      <div class="form-group">
+        <label for="fullName"><h2>Enter Full Name</h2></label>
+        <input id="fullName" class="form-control" type="text">
       </div>
+      <div id="interest-scale">
+        <label for="interest"><h2>On a scale of 1-10, How interested are you in programming?</h2></label>
+        <input id="interest" class="form-control" type="text">
+      </div>
+      <label for="career"><h2>What is your fantasy programming job?</h2></label>
+      <select id="career">
+        <option value="">Choose One</option>
+        <option value="game">Video Game Developer</option>
+        <option value="webpage">Webpage Designer</option>
+        <option value="app">App Developer</option>
+      </select>           
+      <label for="location"><h2>From Where Do You Prefer to Work?</h2></label>
+      <select id="location">
+        <option value="">Choose One</option>
+        <option value="remote">Remotely from Home</option>
+        <option value="office">Company Office</option>
+        <option value="abroad">Remotely Abroad</option>
+      </select><br>
+      <label for="salary"><h2>What is your minimum desired yearly salary?</h2></label><br>
+      <div class="salary">
+        <label>
+          <input type="radio" name="operator" value=min checked>
+          $60,000
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="avg">
+          $90,000
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="max">
+          $120,000
+        </label>
+      </div> 
+      <label for="media"><h2>What is your favorite streaming App?</h2></label>
+      <select id="media">
+        <option value="">Choose One</option>
+        <option value="netflix">Netflix</option>
+        <option value="prime">Prime Video</option>
+        <option value="hulu">Hulu</option>
+      </select><br>
+      <button type="submit" class="btn btn-primary">Here's Your Language!</button>               
     </form>
     <div class="card" id="results">
       <div class="card-body">
