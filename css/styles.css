@@ -8,7 +8,13 @@
   color: black;
 }
 
-
+form#program {
+  background-color: #79B177;
+  text-align: center;
+  color:black;
+  border: 10px solid white;
+  border-radius: 25px;
+}
 
 .ruby {
   display: none;
