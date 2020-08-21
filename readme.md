@@ -5,8 +5,11 @@ _This application is an HTML webpage that utilizes CSS Stylings, Bootstrap, Java
 
 ## Setup/Installation Requirements
 
-* _Download all files from repository_
-* _Run index.html on a browser_
+* _open terminal_
+* _type "cd desktop", then press enter_
+* _type "git clone https://github.com/SolarDor/programming-language/", then press enter_
+* _locate and open folder on desktop named "programming-language"_
+* _open the file named "index.html in browser"_
 
 ## Known Bugs
 
